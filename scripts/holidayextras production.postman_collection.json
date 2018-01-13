@@ -1,0 +1,148 @@
+{
+	"info": {
+		"name": "holidayextras production",
+		"_postman_id": "c6f6e183-55db-8953-908e-775f4f670818",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get users list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://pacific-inlet-33187.herokuapp.com/users/",
+					"protocol": "https",
+					"host": [
+						"pacific-inlet-33187",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get single user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://pacific-inlet-33187.herokuapp.com/users/5a59c26f64c8b60014a32f13",
+					"protocol": "https",
+					"host": [
+						"pacific-inlet-33187",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"5a59c26f64c8b60014a32f13"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"test@test.com\",\n\t\"forename\" : \"TestForename\",\n\t\"surname\" : \"TestSurname\"\n}"
+				},
+				"url": {
+					"raw": "https://pacific-inlet-33187.herokuapp.com/users",
+					"protocol": "https",
+					"host": [
+						"pacific-inlet-33187",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"updated@test.com\",\n\t\"forename\" : \"UpdatedForename\",\n\t\"surname\" : \"UpdatedSurname\"\n}"
+				},
+				"url": {
+					"raw": "https://pacific-inlet-33187.herokuapp.com/users/5a59c26f64c8b60014a32f13",
+					"protocol": "https",
+					"host": [
+						"pacific-inlet-33187",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"5a59c26f64c8b60014a32f13"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://pacific-inlet-33187.herokuapp.com/users/5a59c26f64c8b60014a32f13",
+					"protocol": "https",
+					"host": [
+						"pacific-inlet-33187",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"5a59c26f64c8b60014a32f13"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

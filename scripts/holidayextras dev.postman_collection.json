@@ -1,0 +1,143 @@
+{
+	"info": {
+		"name": "holidayextras dev",
+		"_postman_id": "74a68bb0-dd04-acd6-3307-b7fdc32fd4fc",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get users list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5555/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"users",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get single user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5555/users/5a59c222660d993088221dd7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"users",
+						"5a59c222660d993088221dd7"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"test@test.com\",\n\t\"forename\" : \"TestForename\",\n\t\"surname\" : \"TestSurname\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5555/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"users"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"updated@test.com\",\n\t\"forename\" : \"UpdatedForename\",\n\t\"surname\" : \"UpdatedSurname\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5555/users/5a590622517f2938902c5702",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"users",
+						"5a590622517f2938902c5702"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5555/users/5a59c222660d993088221dd7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"users",
+						"5a59c222660d993088221dd7"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
