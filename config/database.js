@@ -4,10 +4,10 @@ if (process.env.NODE_ENV === 'production') {
     }
 } else if (process.env.NODE_ENV === 'test') {
     module.exports = {
-        mongoURI: "mongodb://192.168.99.100/test"
+        mongoURI: "mongodb://localhost/test"
     }
 } else {
     module.exports = {
-        mongoURI: "mongodb://192.168.99.100/dev"
+        mongoURI: "mongodb://localhost/dev"
     }
 }
