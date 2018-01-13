@@ -1,8 +1,9 @@
-Production URL: https://pacific-inlet-33187.herokuapp.com/
+
 
 # Holidayextras user API
 ### Author : Mihalis Plelis
 ### Version : 1.0.0
+### Production URL: https://pacific-inlet-33187.herokuapp.com/
 
 This Node JS application keeps track of users and persists them in a MongoDB database.
 It is deployed in production using Heroku and it can be accessed via this <a href="https://pacific-inlet-33187.herokuapp.com/">production URL</a>.
@@ -28,12 +29,12 @@ It is deployed in production using Heroku and it can be accessed via this <a hre
 1. Navigate in the project's folder, and type the following command which will install all dependencies and modules.  
     *npm install*  
 
-2. Now navigate in the */stubs* directory of the project, and type the command *docker compose up -d*.  
+2. Now navigate in the */stubs* directory of the project, and type the command **docker compose up -d**.  
    This command will download, build and start the database container.   
    If docker is not available, then the database instance will have to be created manually using MongoDB and the config will have to be updated.
    The database configuration file, is kept under */config/database.js*.  
 
-3. Now, you should be able to run the application with the command, *npm run dev* and also unit test it with the command, *npm test*.  
+3. Now, you should be able to run the application with the command, **npm run dev** and also unit test it with the command, *npm test*.  
    The server is running on port 5555 on localhost by default. Example URL : *http://localhost:5555/users/*
    This application was tested on Windows, so please make sure that you are using the correct URL on Mac/Linux and also make sure to  
    use the correct path for the docker container as well in order to use the database. In case the parameters are different,  
