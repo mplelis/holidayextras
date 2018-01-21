@@ -3,10 +3,12 @@
 # Holidayextras user API
 ### Author : Mihalis Plelis
 ### Version : 1.0.0
-### Production URL: https://pacific-inlet-33187.herokuapp.com/
+### Production URL in Heroku: https://pacific-inlet-33187.herokuapp.com/
+### Production URL in AWS : http://ec2-34-207-69-160.compute-1.amazonaws.com/
 
 This Node JS application keeps track of users and persists them in a MongoDB database.
-It is deployed in production using Heroku and it can be accessed via this <a href="https://pacific-inlet-33187.herokuapp.com/">production URL</a>.
+It is deployed in production using Heroku and it can be accessed via this <a href="https://pacific-inlet-33187.herokuapp.com/">Heroku URL</a>.  
+It is also deployed in AWS and it can be accessed via this <a href="http://ec2-34-207-69-160.compute-1.amazonaws.com/">AWS URL</a>.
 
 ### Functionality Description
 
